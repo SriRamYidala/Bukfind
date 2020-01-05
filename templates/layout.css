@@ -1,0 +1,15 @@
+html, body {
+	height: 100%;
+}
+
+.navbar {
+	background-color: #3e434f;
+}
+
+.container {
+	color: white;
+}
+
+a {
+	color: white;
+}

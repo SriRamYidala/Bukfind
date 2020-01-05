@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="bg-light container">
+    <div class="float-right">{{username}}   <a href="{{url_for('logout')}}">    Log out</a></div>
+</div>
+
+<header class='container bg-light h-35 text-center '>
+    <h1 class="display-2 py-4">bukfind</h1>
+</header>
+
+<nav class="navbar navbar-expand bg-dark navbar-dark justify-content-center">
+    <form class = "form-inline" action="{{url_for('search')}}" method = "POST">
+        <input class="form-control mr-2" type="text" placeholder="Search" name="text">
+        <button class = "btn btn-success" type="submit">Search</button>
+    </form>
+</nav>
+
+<div class='container bg-light h-25 p-3'>
+        <h3 class='text-center p-3'>{{ message }}</h3>
+</div>
+
+{% endblock %}
